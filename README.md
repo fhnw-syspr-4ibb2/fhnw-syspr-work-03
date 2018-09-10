@@ -1,9 +1,15 @@
 # System-Programmierung
 ## Hands-on zu Lektion 3
-Für Slides und Code Beispiele, siehe [Lektion 3](https://github.com/tamberg/fhnw-syspr/blob/master/03/README.md)
+Für Slides und Code Beispiele, siehe [Lektion 3](../../../fhnw-syspr/blob/master/03/README.md)
 
 ### Hands-on, ?h: Title
 * Step 1
+
+### Abgabe (optional)
+* Lokale Änderungen [committen und pushen](#git).
+* GitHub [Issue erstellen](../../issues/new) mit "Bitte um Review, @tamberg".
+* Offene Fragen ausformulieren, was geht nicht, was haben Sie versucht.
+* GitHub mailt mir (@tamberg) automatisch, ich versuche in weniger als 24h zu antworten :)
 
 ## Tools
 ### Git
@@ -14,22 +20,27 @@ Auf Ihrem Computer
             https://github.com/fhnw-syspr-3ia/fhnw-syspr-work-03-tamberg
 
 Auf dem Raspberry Pi
-* $ cd ~
-* $ git clone REPO_URL
-* $ git add FILE
-* $ git commit FILE -m "Fixed all bugs"
-* $ git push
+* Repository klonen<pre>
+    $ cd ~
+    $ git clone REPO_URL</pre>
+* Neue Datei kreieren<pre>
+    $ git add FILE</pre>
+* Änderungen committen<pre>
+    $ git commit FILE -m "Fixed all bugs"</pre>
+* Änderungen hochladen<pre>
+    $ git push</pre>
 
 ### Nano
 Auf dem Raspberry Pi
 * Neue oder bestehende Datei öffnen mit $ nano FILE
-* Editieren
+* Editieren (Achtung, nano hat kein Undo)
 * Speichern mit `CRTL-X` `Y` `RETURN`
 
 ### SSH
 Auf Ihrem Computer
 * Terminal öffnen (Mac) oder `WINDOWS` `R` cmd `RETURN` (Windows)
-* $ ssh pi@raspberrypi.local
+* SSH Session starten mit<pre>
+    $ ssh pi@raspberrypi.local</pre>
 
 ## Support
 - [FHNW Syspr Slack](https://fhnw-syspr.slack.com/)
