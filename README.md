@@ -1,6 +1,6 @@
 # System-Programmierung
-## Hands-on zu Lektion 1
-Für Slides und Code Beispiele, siehe [Lektion 1](https://github.com/tamberg/fhnw-syspr/blob/master/01/README.md)
+## Hands-on zu Lektion 3
+Für Slides und Code Beispiele, siehe [Lektion 3](https://github.com/tamberg/fhnw-syspr/blob/master/03/README.md)
 
 ### Hands-on, ?h: Title
 * Step 1
@@ -11,7 +11,7 @@ Auf Ihrem Computer
 * Zu Beginn jeder Lektion wird ein Hands-on Repository Link bekannt gegeben
 * Nachdem Sie das "Assessment" annehmen, bekommen Sie per Email ein Repository
 * Die REPO_URL enthält Ihren GitHub Account USER_NAME und Ihre Klasse 3ia oder 3ib, z.B.<br/>
-            https://github.com/fhnw-syspr-3ia/fhnw-syspr-work-01-tamberg
+            https://github.com/fhnw-syspr-3ia/fhnw-syspr-work-03-tamberg
 
 Auf dem Raspberry Pi
 * $ cd ~
