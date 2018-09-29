@@ -22,6 +22,16 @@ Für Slides und Code Beispiele, siehe [Lektion 3](../../../fhnw-syspr/blob/maste
 * Erweitern Sie das Programm, dass es alle 3 Sekunden einen neuen Messwert anhängt, im [CSV](https://tools.ietf.org/html/rfc4180) Format.
 * Hinweis: Die [sleep](http://man7.org/linux/man-pages/man3/sleep.3.html) Funktion ermöglicht Pausen.
 
+### b) Dup (auf Papier), 15'
+* Was ist der Output, nach jedem Aufruf von *write()*?<pre>
+    int fd1 = open(f, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+    int fd2 = dup(fd1), fd3 = open(f, O_RDWR);
+    write(fd1, "Ente,", 5);
+    write(fd2, "Hund,", 5);
+    lseek(fd2, 0, SEEK_SET);
+    write(fd1, "Haus,", 5);
+    write(fd3, "Pferd", 5);</pre>
+
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
 * GitHub [Issue erstellen](../../issues/new) mit "Bitte um Review, @tamberg".
