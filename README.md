@@ -5,8 +5,22 @@ Für Slides und Code Beispiele, siehe [Lektion 3](../../../fhnw-syspr/blob/maste
 > *Achtung: Arbeiten Sie nicht direkt auf diesem Repository.*<br/>
 > *[Prüfen Sie die vorhandenen Forks, um das Repository für Ihre Klasse zu finden.](../../network/members)*
 
-### Hands-on, ?h: Title
-* Step 1
+### a) TLPI Beispiele builden, 15'
+* [TLPI](http://www.man7.org/tlpi/) Beispielcode Setup auf dem Raspberry Pi:<pre>
+    $ cd ~
+    $ wget http://man7.org/tlpi/code/download/tlpi-180725-book.tar.gz
+    $ tar xfzmv tlpi-180725-book.tar.gz
+    $ cd tlpi-book
+    $ sudo apt-get install libcap-dev
+    $ sudo apt-get install libacl1-dev
+    $ make</pre>
+
+### b) File I/O, 30'
+* Schreiben Sie ein Programm *my_cpu_temp.c*, dass die CPU Temperatur in ein File *./temp.txt* schreibt.
+* Hinweis für Raspberry Pi, Wert durch 1000 teilen:<pre>
+    $ cat -v /sys/class/thermal/thermal_zone0/temp</pre>
+* Erweitern Sie das Programm, dass es alle 3 Sekunden einen neuen Messwert anhängt, im [CSV](https://tools.ietf.org/html/rfc4180) Format.
+* Hinweis: Die [sleep](http://man7.org/linux/man-pages/man3/sleep.3.html) Funktion ermöglicht Pausen.
 
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
