@@ -29,8 +29,8 @@ Für Slides und Code Beispiele, siehe [Lektion 3](../../../fhnw-syspr/blob/maste
 
 ### d) Atomic Append, 15'
 * Führen Sie das Programm [atomic_append](http://man7.org/tlpi/code/online/dist/fileio/atomic_append.c.html) aus und vergleichen Sie die Grösse der erzeugten Dateien *f1*, *f2*:<pre>
-$ ./atomic_… f1 1000000 & ./atomic_… f1 1000000
-$ ./atomic_… f2 1000000 x & ./ato… f2 1000000 x</pre>
+$ ./atomic_append f1 1000000 & ./atomic_append f1 1000000
+$ ./atomic_append f2 1000000 x & ./atomic_append f2 1000000 x</pre>
 * Teilen Sie *atomic_append.c* in zwei Programme auf, *my_lseek.c* und *my_append.c*, ohne die Option 'x'.
 * Wiederholen Sie den obigen Test mit ihrem Code.
 
