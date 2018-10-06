@@ -45,14 +45,11 @@ Wiederholen Sie den obigen Test mit ihrem Code.
     write(fd3, "Pferd", 5);</pre>
 
 ### f) Buffering, 15'
-* Arbeiten Sie mit dem Beispielprogramm [write_bytes.c](http://man7.org/tlpi/code/online/dist/filebuff/write_bytes.c.html) (aus [TLPI](http://www.man7.org/tlpi/))
-* Die Grösse des Buffers beeinflusst den Call Overhead:<pre>
-    ssize_t w = write(fd, buf, BUF_SIZE);</pre>
-* Bei kleinem Buffer fallen System Calls ins Gewicht.<pre>
-    #define BUF_SIZE 1</pre>
-* Ab 4096 Bytes (= Blockgrösse) bleibt Zeit konstant.<pre>
-    #define BUF_SIZE 4096</pre>
-* Reproduzieren oder widerlegen Sie das Resultat.
+* Kompilieren Sie das Programm [write_bytes](http://man7.org/tlpi/code/online/dist/filebuff/write_bytes.c.html) ((aus [TLPI](http://www.man7.org/tlpi/)) zuerst mit und dann ohne die Compiler Option *-DUSE_O_SYNC*.
+* Messen Sie die Laufzeit (real, sys) der Binaries, je mit *num-bytes* = 100000 und *buf-size* = 1, 16, 256, 4096:<pre>
+    $ time write_bytes my_file num-bytes buf-size</pre>
+* Welchen Einfluss hat die Buffergrösse? Und *O_SYNC*?
+* Wann/wozu ist Synchronisieren überhaupt nötig?
 
 ### Abgabe (optional)
 * Lokale Änderungen [committen und pushen](#git).
