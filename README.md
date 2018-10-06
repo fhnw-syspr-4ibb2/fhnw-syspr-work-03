@@ -35,7 +35,7 @@ $ ./atomic_append f2 1000000 x & ./atomic_append f2 1000000 x</pre>
 * Wiederholen Sie den obigen Test mit ihrem Code.
 
 ### e) Dup (auf Papier), 15'
-* Was ist der Output, nach jedem Aufruf von *write()*?<pre>
+* Was steht im File *f*, nach jedem Aufruf von *write()*?<pre>
     int fd1 = open(f, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
     int fd2 = dup(fd1), fd3 = open(f, O_RDWR);
     write(fd1, "Ente,", 5);
