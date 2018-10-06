@@ -28,11 +28,11 @@ Für Slides und Code Beispiele, siehe [Lektion 3](../../../fhnw-syspr/blob/maste
 * Hinweis: Die [sleep](http://man7.org/linux/man-pages/man3/sleep.3.html) Funktion ermöglicht Pausen.
 
 ### d) Atomic Append, 15'
-Führen Sie das Programm [atomic_append](http://man7.org/tlpi/code/online/dist/fileio/atomic_append.c.html) aus und vergleichen Sie die Grösse der erzeugten Dateien f1, f2:
+* Führen Sie das Programm [atomic_append](http://man7.org/tlpi/code/online/dist/fileio/atomic_append.c.html) aus und vergleichen Sie die Grösse der erzeugten Dateien *f1*, *f2*:<pre>
 $ ./atomic_… f1 1000000 & ./atomic_… f1 1000000
-$ ./atomic_… f2 1000000 x & ./ato… f2 1000000 x
-Teilen Sie atomic_append.c in zwei Programme auf, my_lseek.c und my_append.c, ohne die Option 'x'.
-Wiederholen Sie den obigen Test mit ihrem Code.
+$ ./atomic_… f2 1000000 x & ./ato… f2 1000000 x</pre>
+* Teilen Sie *atomic_append.c* in zwei Programme auf, *my_lseek.c* und *my_append.c*, ohne die Option 'x'.
+* Wiederholen Sie den obigen Test mit ihrem Code.
 
 ### e) Dup (auf Papier), 15'
 * Was ist der Output, nach jedem Aufruf von *write()*?<pre>
