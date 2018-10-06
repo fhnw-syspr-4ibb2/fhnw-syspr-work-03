@@ -45,7 +45,7 @@ Wiederholen Sie den obigen Test mit ihrem Code.
     write(fd3, "Pferd", 5);</pre>
 
 ### f) Buffering, 15'
-* Kompilieren Sie das Programm [write_bytes](http://man7.org/tlpi/code/online/dist/filebuff/write_bytes.c.html) ((aus [TLPI](http://www.man7.org/tlpi/)) zuerst mit und dann ohne die Compiler Option *-DUSE_O_SYNC*.
+* Kompilieren Sie das Programm [write_bytes](http://man7.org/tlpi/code/online/dist/filebuff/write_bytes.c.html) zuerst mit und dann ohne die Compiler Option *-DUSE_O_SYNC*.
 * Messen Sie die Laufzeit (real, sys) der Binaries, je mit *num-bytes* = 100000 und *buf-size* = 1, 16, 256, 4096:<pre>
     $ time write_bytes my_file num-bytes buf-size</pre>
 * Welchen Einfluss hat die Buffergrösse? Und *O_SYNC*?
